@@ -1,10 +1,10 @@
 import { Address } from "cluster";
 
-import {Address} from './address.model';
-
-export interface Student {
-    sid: number;
-    firstName: string;
-    lastName: string;
-    address: Address;
+export class Student {
+    constructor(
+    public sid: number,
+    public firstName: string,
+    public lastName: string,
+    public add: Address,
+    ) {}
 }
