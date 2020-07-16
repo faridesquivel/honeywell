@@ -1,0 +1,30 @@
+[
+    {
+        "GPA": "3.9",
+        "address": {
+            "streetName": "Puebla", 
+            "state": "Mexico", 
+            "city": "Toluca", 
+            "streetNumber": "113", 
+            "zipcode": "51040"
+        },
+        "firstName": "Marco",
+        "lastName": "Suárez",
+        "phoneNumber": "7223292923",
+        "sid": "sT526yq7CHbmnasRCFR57"
+    },
+    {
+        "GPA": "3.4",
+        "address": {
+            "streetName": "Juan Correa", 
+            "state": "CDMX", 
+            "city": "CDMX", 
+            "streetNumber": "2012", 
+            "zipcode": "21000"
+        },
+        "firstName": "Vanessa",
+        "lastName": "Martínez",
+        "phoneNumber": "7223292923",
+        "sid": "fz523yq1JsbmnasRCFR52"
+    }
+]

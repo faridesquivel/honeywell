@@ -1,10 +1,12 @@
-import { Address } from "cluster";
+import { Address } from './address.model';
 
 export class Student {
     constructor(
-    public sid: number,
+    public sid: string,
     public firstName: string,
     public lastName: string,
-    public add: Address,
+    public address: Address,
+    public phoneNumber: number,
+    public GPA: number
     ) {}
 }
