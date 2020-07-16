@@ -1,4 +1,4 @@
-You can see a working example of this app at https://honeywellstudents.web.app/
+You can find a working example of this app at https://honeywellstudents.web.app/
 
 For this project I made use of Mobx and Hooks context, you can look at the basic configuration at src/store
 and src/context and the index.tsx file.
