@@ -1,3 +1,13 @@
+For this project I made use of Mobx and Hooks context, you can look at the basic configuration in src/store
+and src/context and the index.tsx file.
+
+The app will load mock data from api/mockdata.json in case that you haven't saved any data in local storage!
+You can delete the mock data and save new users to your in memory storage and play with the info.
+
+Tests are missing but I will add them in a further update.
+
+I'll leave all the basic scripts to execute the app below...
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
