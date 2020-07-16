@@ -9,10 +9,10 @@ const Navbar = () => {
             <div className="Title">Honeywell</div>
             <div className="NavbarItemsContainer">
                 <div className="NavbarItem">
-                    <Link className="Link" id="list" to="/listStudents">List Students</Link>
+                    <Link className="Link" id="list" to="/listStudents">Students List</Link>
                 </div>
                 <div className="NavbarItem">
-                    <Link className="Link" to="/addStudent">Add Student</Link>
+                    <Link className="Link" to="/addStudent">Add New Student</Link>
                 </div>
             </div>
         </div>

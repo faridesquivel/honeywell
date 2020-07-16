@@ -1,4 +1,6 @@
-For this project I made use of Mobx and Hooks context, you can look at the basic configuration in src/store
+You can see a working example of this app at https://honeywellstudents.web.app/
+
+For this project I made use of Mobx and Hooks context, you can look at the basic configuration at src/store
 and src/context and the index.tsx file.
 
 The app will load mock data from api/mockdata.json in case that you haven't saved any data in local storage!
