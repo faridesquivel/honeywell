@@ -1,6 +1,6 @@
 import React from 'react';
 import { useObserver } from 'mobx-react-lite';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { Student } from '../models/student.model';
 import { useRootStore } from '../context/RootStateContext';
 import './ListStudentsScreen.scss';
@@ -69,10 +69,9 @@ const ListStudents = ({ history }: any) => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                });
+              });
             }}>Remove All Students</button>
         </div>
-        <ToastContainer />
       </div>
     )
   );

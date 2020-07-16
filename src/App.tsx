@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import StudentScreen from './screens/AddStudentScreen';
 import ListStudents from './screens/ListStudentsScreen';
 import StudentDetail from './screens/StudentDetailScreen';
@@ -25,6 +26,7 @@ function App() {
           <Redirect to="/listStudents" />
         </Route>
       </Switch>
+      <ToastContainer />
     </div>
   );
 }

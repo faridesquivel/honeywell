@@ -1,5 +1,6 @@
 import React from 'react';
 import { useObserver } from 'mobx-react-lite';
+import { toast } from 'react-toastify';
 import { useRootStore } from '../context/RootStateContext';
 import { Student } from '../models/student.model';
 import './StudentDetailScreen.scss';
@@ -27,6 +28,15 @@ const StudentDetail = ({match, history}: any) => {
                 </div>
                 <button className="FormInputButton Delete" onClick={() => {
                     studentsStore.removeStudent(student.sid);
+                    toast.dark('Student deleted!', {
+                      position: "top-right",
+                      autoClose: 2000,
+                      hideProgressBar: true,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                    });
                     history.push('/listStudents')
                 }}>Delete</button>
             </div>
