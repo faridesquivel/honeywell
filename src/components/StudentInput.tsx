@@ -63,7 +63,7 @@ export const NewStudentInput: React.FC<NewStudentInputProps> = ({ addStudent, na
 
     return (
         <div className="FormContainer">
-            <h1 className="FormTitle">Add New Student</h1>
+            <h1 className="FormTitle">Adding New Student</h1>
             <div className="FormInputGroup">
                 <label className="FormInputLabel">First Name</label>
                 <input 
@@ -163,7 +163,7 @@ export const NewStudentInput: React.FC<NewStudentInputProps> = ({ addStudent, na
                     className="FormInput"
                 />
             </div>
-            <button onClick={onAddStudent} className="FormInputButton">Add Student</button>
+            <button onClick={onAddStudent} className="FormInputButton Delete">Add Student</button>
         </div>
     );
 }

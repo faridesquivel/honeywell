@@ -37,7 +37,7 @@
 .FormInput {
     text-decoration: none;
     border-radius: 5px;
-    border: 1px solid $secondary;
+    border: 1px solid $primary;
     width: 100%;
     text-align: center;
 }
@@ -51,5 +51,5 @@
 
 .FormTitle {
     text-align: center;
-    color: $tertiary;
+    color: $primary;
 }

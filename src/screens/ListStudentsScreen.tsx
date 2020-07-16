@@ -19,7 +19,6 @@ const ListStudents = ({ history }: any) => {
             studentsStore.students.map((student: Student) => (
               <div key={student.sid} className="Card">
                   <div className="CardHeader" onClick={(event: any) => navigate(student.sid)}>
-                    <div className="CardImage">Image Placeholder</div>
                     <h1 className="CardTitle">{student.firstName} {student.lastName}</h1>
                   </div>
                   <div className="CardContent" onClick={(event: any) => navigate(student.sid)}>
@@ -28,7 +27,18 @@ const ListStudents = ({ history }: any) => {
                       <h2 className="CardText">GPA: {student.GPA}</h2>
                     </div>
                   </div>
-                  <button className="FormInputButton Delete" onClick={() => studentsStore.removeStudent(student.sid)}>Delete</button>
+                  <button className="FormInputButton Delete" onClick={() => {
+                    studentsStore.removeStudent(student.sid);
+                    toast.dark('Student deleted!', {
+                      position: "top-right",
+                      autoClose: 2000,
+                      hideProgressBar: true,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                    });
+                  }}>Delete</button>
               </div>
             ))
           }

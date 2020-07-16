@@ -9,11 +9,16 @@
     border-radius: 10px;
     height: 45px;
     border: 0;
-    color: $light;
+    color: $primary;
 }
 
 .Delete {
     background-color: $primary;
+    color: $secondary;
+}
+
+.Delete:hover {
+    color: $primary;
 }
 
 .FormInputButton:hover {
