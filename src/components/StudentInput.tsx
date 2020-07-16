@@ -49,7 +49,7 @@ export const NewStudentInput: React.FC<NewStudentInputProps> = ({ addStudent, na
     const onAddStudent = () => {
         addStudent(student);
         setStudent(studentInitialState);
-        toast.dark('Student added correctly!', {
+        toast.dark(`${student.firstName} added!`, {
           position: "top-right",
           autoClose: 2000,
           hideProgressBar: true,

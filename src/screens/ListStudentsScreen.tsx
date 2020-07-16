@@ -29,7 +29,7 @@ const ListStudents = ({ history }: any) => {
                   </div>
                   <button className="FormInputButton Delete" onClick={() => {
                     studentsStore.removeStudent(student.sid);
-                    toast.dark('Student deleted!', {
+                    toast.dark(`${student.firstName} deleted!`, {
                       position: "top-right",
                       autoClose: 2000,
                       hideProgressBar: true,
